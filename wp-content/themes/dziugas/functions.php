@@ -6,3 +6,9 @@ function mokausiWp_resources(){
 }
 
 add_action('wp_enqueue_scripts', 'mokausiWp_resources');
+
+//Navigation
+register_nav_menus(array(
+	'primary' => __('Sample Page'),
+	'footer' => __('Footer Menu')
+));
